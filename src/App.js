@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Game from './Game/Game.js';
+import Ladder from './Ladder/Ladder.js';
+
 import drawdata from './2019_1_OMM2.json';
 
 
@@ -162,11 +164,11 @@ openLadder = () => {
     return (
       <div className="App">
         <div className="titleBar">
-          <h2>Open Men • Monday • Division 2</h2>
+          <h2>Open Men Monday Division 2</h2>
         </div>
         <div className="nav">
-          <div className="navItem"><a href="#slide-1" onClick={this.openDraw} id="drawButton">DRAW</a></div>
-          <div className="navItem"><a href="#slide-2" onClick={this.openLadder} id="ladderButton">LADDER</a></div>
+          <div className="navItem"><a href="#draw" onClick={this.openDraw} id="drawButton">DRAW</a></div>
+          <div className="navItem"><a href="#ladder" onClick={this.openLadder} id="ladderButton">LADDER</a></div>
         </div>    
         <div className="slide-wrap">
           <div className="compSlider">
@@ -191,7 +193,7 @@ openLadder = () => {
                 </div>
               </div>
             </div>
-            <div className="slide" id="ladderSlide">Ladder</div>
+            <Ladder />
           </div>
         </div>
         

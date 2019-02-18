@@ -1,0 +1,19 @@
+{
+    "teams": [
+        {
+            "position": "1",
+            "teamName": "Ladder Team One",
+            "points": 10
+        },
+        {
+            "position": "2",
+            "teamName": "Ladder Team One",
+            "points": 8
+        },
+        {
+            "position": "3",
+            "teamName": "Ladder Team One",
+            "points": 5
+        }
+    ]
+}
