@@ -1,7 +1,131 @@
 body {
-  background-color: #f5f5f5;
+  background-color: #031F34;
 }
 
 .App {
   text-align: center;
+  width: 400px;
 }
+.titleBar {
+  color:white;
+  padding: 20px 0;
+}
+
+.titleBar h2 {
+  text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 2px;
+  font-family: system-ui, sans;
+  text-align: center;
+}
+
+.nav {
+  background: #031F34;
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+	
+.nav .navItem {
+	
+}
+	
+.nav .navItem a {
+	padding:20px;
+	display: block;
+	color:white;
+	text-decoration: none;
+	font-size: 11px;
+	letter-spacing: 2px;
+	font-family: system-ui, sans;
+}
+
+.nav .navItem a#drawButton {
+	background: #8E2245;
+}
+.nav .navItem a#ladderButton {
+	background: #031F34;
+}
+
+
+.compSlider {
+	width: 400px;
+	background: #f5f5f5;
+  display: block;
+  min-height: 600px;
+	position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+	.slide {
+    width: 400px;
+    background: white;
+		font-family: system-ui, sans;
+		position:absolute;
+		top:0;
+		-webkit-transition: left 0.35s; /* Safari */
+ 		transition: left 0.35s;
+  		transition-timing-function: ease-out;
+
+	}
+	.slide#drawSlide {
+		background: #f5f5f5;
+		left: 0;
+	}
+	.slide#ladderSlide {
+		left: 400px;
+		background: #f5f5f5;
+	}
+
+  
+		.roundNav {
+			width: 380px;
+			background: #031F34;
+      padding: 10px;
+			display: grid;
+			grid-gap: 10px;
+			grid-template-columns: 40px auto 40px;
+			align-items: center;
+		}
+
+		.roundNavButton {
+
+		}
+
+		.roundNavDate {
+			justify-self: center;
+
+		}
+
+
+		.roundNavButton button {
+
+		}
+		.roundNavButton.next {
+			justify-self: center;
+
+		}
+
+
+		.roundNavDate h2 {
+			font-family: sans-serif;
+			font-weight: 400;
+			font-size: 11px;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			color: white;
+		}
+
+		button.circular {
+			width: 40px;
+			height: 40px;
+			border-radius: 20px;
+			border-width: 0;
+			background: #263541;
+			color: #fff;
+		}
+		button.circular:hover {
+			background: #344959;
+			cursor: pointer;
+		}

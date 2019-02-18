@@ -2,7 +2,7 @@
     "rounds": [
         {
           "id": "XXXXXXX",
-          "date": "4 Feburary 2019",
+          "date": "Mon Feb 17 2019 23:59:59 GMT+1100 (Australian Eastern Daylight Time)",
           "roundNo": 1,
           "noOfGames": 4,
           "games": [
@@ -11,7 +11,7 @@
                     "time": "19:50",
                     "played": false,
                     "completed": false,
-                    "resulted": false,
+                    "resulted": true,
                     "homeTeam": "Hybrids",
                     "awayTeam": "Real Friends",
                     "homeScore": null,  
@@ -74,7 +74,7 @@
         },
         {
           "id": "XXXXXXX",
-          "date": "11 Feburary 2019",
+          "date": "Mon Feb 20 2019 23:59:59 GMT+1100 (Australian Eastern Daylight Time)",
           "roundNo": 2,
           "noOfGames": 4,
           "games": [
@@ -146,7 +146,7 @@
         },
         {
           "id": "XXXXXXX",
-          "date": "18 Feburary 2019",
+          "date": "Mon Feb 21 2019 23:59:59 GMT+1100 (Australian Eastern Daylight Time)",
           "roundNo": 3,
           "noOfGames": 4,
           "games": [
@@ -218,7 +218,7 @@
         },
         {
           "id": "XXXXXXX",
-          "date": "25 Feburary 2019",
+          "date": "Mon Feb 25 2019 23:59:59 GMT+1100 (Australian Eastern Daylight Time)",
           "roundNo": 4,
           "noOfGames": 4,
           "games": [
