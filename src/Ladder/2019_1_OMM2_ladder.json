@@ -3,7 +3,13 @@
         {
             "position": "1",
             "teamName": "Ladder Team One",
-            "points": 10
+            "points": 0,
+            "win": 0,
+            "loss": 0,
+            "draw": 0,
+            "for": 0,
+            "against": 0,
+            "difference": 0
         },
         {
             "position": "2",
@@ -14,6 +20,11 @@
             "position": "3",
             "teamName": "Ladder Team One",
             "points": 5
+        },
+        {
+            "position": "4",
+            "teamName": "Ladder Team four",
+            "points": 2
         }
     ]
 }

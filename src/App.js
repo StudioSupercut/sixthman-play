@@ -9,9 +9,9 @@ import drawdata from './2019_1_OMM2.json';
 class App extends Component {
   constructor (props){
     super(props);
-    console.log('[App.js] constructor');
-    console.log(drawdata.rounds);
-    let currentRoundIndex = this.findRound(drawdata.rounds);
+    // console.log('[App.js] constructor');
+    // console.log(drawdata.rounds);
+    // let currentRoundIndex = this.findRound(drawdata.rounds);
     let currentRound = this.findRound(drawdata.rounds) + 1;
 
     let isFirstRound = this.firstRoundCheck(currentRound);
@@ -55,17 +55,17 @@ class App extends Component {
     }
   }
   static getDerivedStateFromProps(props,state) {
-    console.log('[App.js] getDerivedStateFromProps', props)
+    // console.log('[App.js] getDerivedStateFromProps', props)
     return state;
   }
 
   componentDidMount() {
-    console.log('[App.js] componentDidMount')
+    // console.log('[App.js] componentDidMount')
 
   }
 
 openDraw = () => {
-    console.log('Open Draw');
+    // console.log('Open Draw');
     document.getElementById("ladderSlide").style.left = "400px";
     document.getElementById("drawSlide").style.left = "0px";
     document.getElementById("ladderButton").style.background = "#031F34";
@@ -73,7 +73,7 @@ openDraw = () => {
 }
 
 openLadder = () => {
-    console.log('Open Ladder');
+    // console.log('Open Ladder');
     document.getElementById("drawSlide").style.left = "-400px";
     document.getElementById("ladderSlide").style.left = "0";
     document.getElementById("ladderButton").style.background = "#8E2245";
@@ -120,7 +120,7 @@ openLadder = () => {
   }
   
   render() {
-    console.log('[App.js] render');
+    // console.log('[App.js] render');
 
     let drawButtons = null;
 
@@ -163,13 +163,16 @@ openLadder = () => {
 
     return (
       <div className="App">
-        <div className="titleBar">
-          <h2>Open Men Monday Division 2</h2>
+        <div className="topBar">
+          <div className="titleBar">
+            <h2>Open Men Monday Division 2</h2>
+          </div>
+          <div className="nav">
+            <div className="navItem"><a href="#draw" onClick={this.openDraw} id="drawButton">DRAW</a></div>
+            <div className="navItem"><a href="#ladder" onClick={this.openLadder} id="ladderButton">LADDER</a></div>
+          </div>    
         </div>
-        <div className="nav">
-          <div className="navItem"><a href="#draw" onClick={this.openDraw} id="drawButton">DRAW</a></div>
-          <div className="navItem"><a href="#ladder" onClick={this.openLadder} id="ladderButton">LADDER</a></div>
-        </div>    
+        
         <div className="slide-wrap">
           <div className="compSlider">
             <div className="slide" id="drawSlide">

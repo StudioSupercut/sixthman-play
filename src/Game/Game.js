@@ -2,7 +2,7 @@ import React from 'react';
 import './Game.css';
 
 const game = (props) => {
-    console.log('[Person.js] rendering...');
+    // console.log('[Person.js] rendering...');
     return (
         <div className="game">
             <div className="gameDetails">
